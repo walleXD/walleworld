@@ -5,15 +5,23 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import { Query, SitePageContext } from "../graphql-types";
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+interface Props {
+  data: Query,
+  pageContext: SitePageContext
+  location: {
+    pathname: string
+  }
+}
+
+const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location }) => {
+    const post = data.markdownRemark
+    const siteTitle = data.site.siteMetadata.title
+    const { previous, next } = pageContext
 
     return (
-      <Layout location={this.props.location} title={siteTitle}>
+      <Layout location={location} title={siteTitle}>
         <SEO
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
@@ -64,7 +72,6 @@ class BlogPostTemplate extends React.Component {
       </Layout>
     )
   }
-}
 
 export default BlogPostTemplate
 
