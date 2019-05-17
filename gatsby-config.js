@@ -3,7 +3,7 @@ module.exports = {
     title: `Walle World`,
     author: `Walee`,
     description: `Collection of thoughts.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://walee.me`,
     social: {
       twitter: ''
     }
@@ -81,3 +81,4 @@ module.exports = {
     },
   ],
 }
+

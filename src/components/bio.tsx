@@ -65,8 +65,8 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong>: CodeMonkey ️️⌨🐒, CS Nerd 🖥, Thoughtful 🤔
-        & Minimalist in Progress📝
+        Written by <strong>{author}</strong>: CodeMonkey👨🏽‍💻, CS Nerd 🖥, Thoughtful 🤔
+        & Minimalist in Progress 📝
         {` `}
       </p>
     </div>

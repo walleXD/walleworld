@@ -1,4 +1,2 @@
-// custom typefaces
-import "typeface-montserrat"
-import "typeface-merriweather"
 import 'wired-elements'
+import "prismjs/themes/prism-twilight.css"
