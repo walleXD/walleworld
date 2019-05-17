@@ -49,6 +49,7 @@
     "@types/react-helmet": "^5.0.8",
     "@types/typography": "^0.16.2",
     "gatsby-plugin-typescript": "^2.0.14",
+    "gh-pages": "^2.0.1",
     "prettier": "^1.17.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
@@ -68,6 +69,7 @@
     "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "graphql-types": "graphql-codegen"
+    "graphql-types": "graphql-codegen",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   }
 }
