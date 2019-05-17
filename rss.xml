@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Walle World]]></title><description><![CDATA[Collection of thoughts.]]></description><link>https://gatsby-starter-blog-demo.netlify.com/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 17 May 2019 22:21:41 GMT</lastBuildDate><item><title><![CDATA[Hello World]]></title><description><![CDATA[This is my first post on my new gatsby blog! How exciting!More incoming …]]></description><link>https://gatsby-starter-blog-demo.netlify.com//hello-world/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com//hello-world/</guid><pubDate>Fri, 17 May 2019 17:45:03 GMT</pubDate><content:encoded>&lt;p&gt;This is my first post on my new gatsby blog! How exciting!&lt;/p&gt;
+&lt;p&gt;More incoming …&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/walleworld/static/85fa31e203914578545f3961d8173f8f/8d2b4/incoming.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 474px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.24472573839661%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAQFA//EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAGW3k8MEtkf/8QAGxAAAgMAAwAAAAAAAAAAAAAAAgMAAREEEiL/2gAIAQEAAQUC4+9rrKiRxhJ8ikJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGxAAAwACAwAAAAAAAAAAAAAAAAEREBIhMmH/2gAIAQEABj8CaLjS+07M5VP/xAAaEAACAwEBAAAAAAAAAAAAAAABEQAhMUFh/9oACAEBAAE/ISQdEKUGawwi8U9iw2AYk/VE20buf//aAAwDAQACAAMAAAAQd9//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREh/9oACAEDAQE/EE1NIf/EABcRAAMBAAAAAAAAAAAAAAAAAAABESH/2gAIAQIBAT8Qa0p//8QAGxABAQADAAMAAAAAAAAAAAAAAREAITFRYYH/2gAIAQEAAT8QknVVDeuFwF0LgbfGQQ0HicxTMBoJoUx8pFJAX4ZVM2lrPWf/2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Incoming Meme!&quot;
+        title=&quot;&quot;
+        src=&quot;/walleworld/static/85fa31e203914578545f3961d8173f8f/8d2b4/incoming.jpg&quot;
+        srcset=&quot;/walleworld/static/85fa31e203914578545f3961d8173f8f/8ee9c/incoming.jpg 148w,
+/walleworld/static/85fa31e203914578545f3961d8173f8f/ebbe7/incoming.jpg 295w,
+/walleworld/static/85fa31e203914578545f3961d8173f8f/8d2b4/incoming.jpg 474w&quot;
+        sizes=&quot;(max-width: 474px) 100vw, 474px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;</content:encoded></item></channel></rss>
