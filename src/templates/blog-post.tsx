@@ -27,7 +27,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location }) => {
           description={post.frontmatter.description || post.excerpt}
         />
         <h1>{post.frontmatter.title}</h1>
-        <p
+        <h5
           style={{
             ...scale(-1 / 5),
             display: `block`,
@@ -36,7 +36,7 @@ const BlogPostTemplate: React.FC<Props> = ({ data, pageContext, location }) => {
           }}
         >
           {post.frontmatter.date}
-        </p>
+        </h5>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr
           style={{

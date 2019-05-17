@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Walle World`,
-    author: `Walee Ahmed`,
+    author: `Walee`,
     description: `Collection of thoughts.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {

@@ -7,9 +7,10 @@
 
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
+import Image, { FixedObject } from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
+import { Query } from "../graphql-types";
 
 const bioQuery = graphql`
   query BioQuery {
@@ -31,8 +32,16 @@ const bioQuery = graphql`
   }
 `
 
+interface Data extends Query {
+  avatar: {
+    childImageSharp: {
+      fixed: FixedObject
+    }
+  }
+}
+
 const Bio = () => {
-  const data = useStaticQuery(bioQuery)
+  const data: Data = useStaticQuery(bioQuery)
   const { author, social } = data.site.siteMetadata
   
   return (
@@ -56,12 +65,9 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and works in San
-        Francisco building useful things.
+        Written by <strong>{author}</strong>: CodeMonkey ️️⌨🐒, CS Nerd 🖥, Thoughtful 🤔
+        & Minimalist in Progress📝!
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
-        </a>
       </p>
     </div>
   )

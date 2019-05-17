@@ -63,7 +63,6 @@ const Layout: React.FC<Props> = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <wired-button>Hello</wired-button>
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

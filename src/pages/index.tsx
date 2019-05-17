@@ -39,7 +39,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{frontmatter.date}</small>
+              <h5>{frontmatter.date}</h5>
               <p
                 dangerouslySetInnerHTML={{
                   __html: frontmatter.description || excerpt,
