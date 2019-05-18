@@ -48,6 +48,7 @@
     "@types/react-dom": "^16.8.4",
     "@types/react-helmet": "^5.0.8",
     "@types/typography": "^0.16.2",
+    "gatsby-plugin-draft": "^0.0.4",
     "gatsby-plugin-typescript": "^2.0.14",
     "gh-pages": "^2.0.1",
     "prettier": "^1.17.1"
