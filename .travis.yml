@@ -10,7 +10,7 @@ cache:
     - node_modules
 
 install:
-  - yarn i
+  - yarn
 script:
   - yarn build
   - yarn deploy
