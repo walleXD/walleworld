@@ -1,24 +1,20 @@
 import Typography from "typography"
 
 const typography = new Typography({
-  baseFontSize: '18px',
+  baseFontSize: "18px",
   baseLineHeight: 1.666,
-  headerFontFamily: ['Gloria Hallelujah', 'cursive'],
-  bodyFontFamily: ['Roboto', 'sans-serif'],
+  headerFontFamily: ["Gloria Hallelujah", "cursive"],
+  bodyFontFamily: ["Roboto", "sans-serif"],
   googleFonts: [
     {
-      name: 'Gloria Hallelujah',
-      styles: [
-        '400'
-      ]
+      name: "Gloria Hallelujah",
+      styles: ["400"],
     },
     {
-      name: 'Roboto',
-      styles: [
-        '400'
-      ]
-    }
-  ]
+      name: "Roboto",
+      styles: ["400"],
+    },
+  ],
   // See below for the full list of options.
 })
 

@@ -1,33 +1,34 @@
-import React from "react"
+import React, { ReactElement } from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
-import { Query } from '../graphql-types'
+import { Query } from "../graphql-types"
 
 interface Props {
   location: {
     pathname: string
-  },
+  }
   data: Query
 }
 
-const BlogIndex: React.FC<Props> = ({ data, location }) => {
-    const { site, allMarkdownRemark } = data
-    const siteTitle = site.siteMetadata.title || ''
-    const posts = allMarkdownRemark.edges
+const BlogIndex: React.FC<Props> = ({ data, location }): ReactElement => {
+  const { site, allMarkdownRemark } = data
+  const siteTitle = site.siteMetadata.title || ""
+  const posts = allMarkdownRemark.edges
 
-    return (
-      <Layout location={location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-        />
-        <Bio />
-        {posts.map(({ node: {frontmatter, fields, excerpt} }) => {
-          const title = frontmatter.title || fields.slug || ''
+  return (
+    <Layout location={location} title={siteTitle}>
+      <SEO
+        title="All posts"
+        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+      />
+      <Bio />
+      {posts.map(
+        ({ node: { frontmatter, fields, excerpt } }): ReactElement => {
+          const title = frontmatter.title || fields.slug || ""
           return (
             <wired-card key={fields.slug}>
               <h3
@@ -47,10 +48,11 @@ const BlogIndex: React.FC<Props> = ({ data, location }) => {
               />
             </wired-card>
           )
-        })}
-      </Layout>
-    )
-  }
+        }
+      )}
+    </Layout>
+  )
+}
 
 export default BlogIndex
 
@@ -63,7 +65,8 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       filter: { fields: { draft: { eq: false } } }
-      sort: { fields: [frontmatter___date], order: DESC }) {
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
       edges {
         node {
           excerpt
