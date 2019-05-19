@@ -1,0 +1,79 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "content/blog"
+    }
+  ],
+  "settings": {
+    "prettier.eslintIntegration": true,
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+      // "javascript",
+      // "javascriptreact",
+      { "language": "typescript", "autoFix": true },
+      { "language": "typescriptreact", "autoFix": true }
+    ],
+
+    "editor.formatOnSave": true,
+    "[javascript]": {
+      "editor.formatOnSave": false
+    },
+    "[javascriptreact]": {
+      "editor.formatOnSave": false
+    },
+    "[typescript]": {
+      "editor.formatOnSave": false
+    },
+    "[typescriptreact]": {
+      "editor.formatOnSave": false
+    }
+  },
+  "launch": {
+    "configurations": [
+      {
+        "name": "Gatsby develop",
+        "type": "node",
+        "request": "launch",
+        "protocol": "inspector",
+        "program": "${workspaceFolder:walleWorld}/node_modules/gatsby/dist/bin/gatsby",
+        "args": ["develop"],
+        "stopOnEntry": false,
+        "runtimeArgs": ["--nolazy"],
+        "sourceMaps": false,
+        "autoAttachChildProcesses": true,
+        "internalConsoleOptions": "openOnFirstSessionStart",
+        "console": "integratedTerminal"
+      },
+      {
+        "name": "Gatsby build",
+        "type": "node",
+        "request": "launch",
+        "protocol": "inspector",
+        "program": "${workspaceRoot}/node_modules/gatsby/dist/bin/gatsby",
+        "args": ["build"],
+        "stopOnEntry": false,
+        "runtimeArgs": ["--nolazy"],
+        "sourceMaps": false
+      },
+      {
+        "type": "chrome",
+        "request": "launch",
+        "name": "Gatsby chrome",
+        "port": 9222,
+        "url": "http://localhost:8000",
+        "webRoot": "${workspaceFolder:walleWorld}",
+        "runtimeExecutable": "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+        "timeout": 10000
+      }
+    ],
+    "compounds": [
+      {
+        "name": "Gatsby All",
+        "configurations": ["Gatsby develop", "Gatsby chrome"]
+      }
+    ]
+  }
+}
