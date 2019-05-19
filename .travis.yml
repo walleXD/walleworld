@@ -8,9 +8,13 @@ branches:
 cache:
   directories:
     - node_modules
+    - .cache
 
 install:
   - yarn
+
+script:
+  - yarn build
 
 deploy:
   provider: pages
