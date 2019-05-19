@@ -4,4 +4,4 @@
   Walle World
 </h1>
 
-
+[![Build Status](https://travis-ci.org/walleXD/walleworld.svg?branch=master)](https://travis-ci.org/walleXD/walleworld)
