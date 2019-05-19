@@ -21,10 +21,7 @@ const BlogIndex: React.FC<Props> = ({ data, location }): ReactElement => {
 
   return (
     <Layout location={location} title={siteTitle}>
-      <SEO
-        title="All posts"
-        keywords={[`blog`, `gatsby`, `javascript`, `react`]}
-      />
+      <SEO title="Home" keywords={[`blog`, `gatsby`, `javascript`, `react`]} />
       <Bio />
       {posts.map(
         ({ node: { frontmatter, fields, excerpt } }): ReactElement => {
