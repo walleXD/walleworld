@@ -6,7 +6,7 @@ description: Maven is used all over and can be well integrated into an eclispe b
 
 ## Assumptions
 
-![Assumption Meme!](./assumption_meme.jpg)
+![Assumption Meme!][image-1]
 
 ## Feature project
 
@@ -26,8 +26,8 @@ description: Maven is used all over and can be well integrated into an eclispe b
 </project>
 ```
 
-```
-mvn verify
+```bash
+mvn package
 ```
 
 ## Update Site Project
@@ -49,7 +49,7 @@ mvn verify
 </project>
 ```
 
-```
+```bash
 mvn verify
 ```
 
@@ -65,7 +65,7 @@ mvn verify
       <executions>
           <execution>
             <id>add-to-update-site</id>
-            <phase>install</phase>
+            <phase>package</phase>
             <goals>
                 <goal>mirror</goal>
             </goals>
@@ -85,8 +85,8 @@ mvn verify
 </build>
 ```
 
-```
-mvn verify
+```bash
+mvn package
 ```
 
 ## Auto update versions
@@ -98,3 +98,5 @@ mvn -Dtycho.mode=maven org.eclipse.tycho:tycho-versions-plugin:set-version -Dnew
 ```bash
 mvn -Dtycho.mode=maven org.eclipse.tycho:tycho-versions-plugin:update-eclipse-metadata -DnewVersion=new_version-SNAPSHOT
 ```
+
+[image-1]: ./assumption_meme.jpg
